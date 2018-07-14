@@ -10,5 +10,14 @@ const routers = [{
 }, {
     path: '/layout',
     component: (resolve) => require(['./views/demo/layout.vue'], resolve)
+}, {
+    path: '/button',
+    component: (resolve) => require(['./views/demo/button.vue'], resolve)
+}, {
+    path: '/icon',
+    component: (resolve) => require(['./views/demo/icon.vue'], resolve)
+}, {
+    path: '/form',
+    component: (resolve) => require(['./views/demo/form.vue'], resolve)
 }];
 export default routers;
