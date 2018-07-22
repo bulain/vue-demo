@@ -19,5 +19,8 @@ const routers = [{
 }, {
     path: '/form',
     component: (resolve) => require(['./views/demo/form.vue'], resolve)
+}, {
+    path: '/table',
+    component: (resolve) => require(['./views/demo/table.vue'], resolve)
 }];
 export default routers;

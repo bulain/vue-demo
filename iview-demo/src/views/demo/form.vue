@@ -132,7 +132,19 @@
             <Checkbox label="苹果"></Checkbox>
             <Checkbox label="西瓜"></Checkbox>
         </CheckboxGroup>
-        </div>
+        <br>
+        <Switch v-model="value23"></Switch>
+        <Switch v-model="value24">
+            <span slot="open">开</span>
+            <span slot="close">关</span>
+        </Switch>
+        <Switch v-model="value25" size="large">
+            <span slot="open">开启</span>
+            <span slot="close">关闭</span>
+        </Switch>
+
+    </div>
+
 </template>
 <script>
 export default {
@@ -157,9 +169,9 @@ export default {
       value17: "",
       value18: "",
       value19: "",
-      value20: "",
-      value21: "",
-      value22: "",
+      value20: [],
+      value21: [],
+      value22: [],
       value23: "",
       value24: "",
       value25: "",
@@ -167,6 +179,8 @@ export default {
       value27: "",
       value28: "",
       value29: "",
+      indeterminate: true,
+      checkAll: false,
     }
   },
     methods: {
@@ -196,5 +210,6 @@ export default {
                 this.checkAll = false;
             }
         }
-};
+    }
+}
 </script>
