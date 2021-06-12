@@ -37,20 +37,20 @@
 </style>
 
 <script>
-  export default {
-    name: 'LeftMenu',
-    data() {
-      return {
-        isCollapse: false
-      };
+export default {
+  name: 'LeftMenu',
+  data () {
+    return {
+      isCollapse: false
+    }
+  },
+  methods: {
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
     },
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
     }
   }
+}
 </script>

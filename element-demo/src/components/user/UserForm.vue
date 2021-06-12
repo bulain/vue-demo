@@ -39,26 +39,26 @@
 </template>
 
 <script>
-  export default {
-    name: 'UserForm',
-    data() {
-      return {
-        sizeForm: {
-          name: '',
-          region: '',
-          date1: '',
-          date2: '',
-          delivery: false,
-          type: [],
-          resource: '',
-          desc: ''
-        }
-      };
-    },
-    methods: {
-      onSubmit() {
-        console.log('submit!');
+export default {
+  name: 'UserForm',
+  data () {
+    return {
+      sizeForm: {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
       }
     }
-  };
+  },
+  methods: {
+    onSubmit () {
+      console.log('submit!')
+    }
+  }
+}
 </script>
