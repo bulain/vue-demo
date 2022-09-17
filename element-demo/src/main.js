@@ -6,6 +6,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
 
+import authz from '@/directive/authz/index.js'
+Vue.directive('authz', authz)
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI, { size: 'small' })

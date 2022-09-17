@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/UserList',
-      name: 'UserList',
+      name: 'UserListx',
       component: UserList
     },
     {

@@ -3,8 +3,8 @@
     <el-container>
       <el-header><top-menu /></el-header>
       <el-container>
-          <el-aside><left-menu /></el-aside>
-          <el-main><router-view/></el-main>
+        <el-aside><left-menu /></el-aside>
+        <el-main><router-view/></el-main>
       </el-container>
     </el-container>
   </div>

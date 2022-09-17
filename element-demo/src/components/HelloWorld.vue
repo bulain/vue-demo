@@ -15,7 +15,7 @@
       <li>
         <a href="https://twitter.com/vuejs" target="_blank"> Twitter </a>
       </li>
-      <br />
+      <br >
       <li>
         <a href="http://vuejs-templates.github.io/webpack/" target="_blank">
           Docs for This Template
@@ -34,7 +34,7 @@
         <a href="http://vue-loader.vuejs.org/" target="_blank"> vue-loader </a>
       </li>
       <li>
-        <a href="https://github.com/vuejs/awesome-vue" target="_blank">
+        <a v-authz="102030" href="https://github.com/vuejs/awesome-vue" target="_blank">
           awesome-vue
         </a>
       </li>
@@ -45,10 +45,43 @@
 <script>
 export default {
   name: 'HelloWorld',
-  data () {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  beforeCreate() {
+    console.log('component - beforeCreate')
+  },
+  created() {
+    console.log('component - created')
+  },
+  beforeMount() {
+    console.log('component - beforeMount')
+  },
+  mounted() {
+    console.log('component - mounted')
+  },
+  beforeUpdate() {
+    console.log('component - beforeUpdate')
+  },
+  updated() {
+    console.log('component - updated')
+  },
+  activated() {
+    console.log('component - activated')
+  },
+  deactivated() {
+    console.log('component - deactivated')
+  },
+  beforeDestroy() {
+    console.log('component - beforeDestroy')
+  },
+  destroyed() {
+    console.log('component - destroyed')
+  },
+  errorCaptured() {
+    console.log('component - errorCaptured')
   }
 }
 </script>
